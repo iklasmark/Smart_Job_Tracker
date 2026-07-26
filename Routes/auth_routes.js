@@ -45,7 +45,7 @@ router.post("/login", authLimiter, async (req, res) => {
             return res.status(401).json({ error: 'wrong password' });
         }
 
-        //generate token
+        ///generate token
         const payload = {
             id: user.id,
             email: user.email
